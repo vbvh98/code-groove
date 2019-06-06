@@ -1,13 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/*! debug.css v0.0.3 | MIT License | https://gist.github.com/zaydek/6b2e55258734deabbd2b4a284321d6f6 */
+[debug],
+[debug] *,
+* {
+  /* color: hsla(210, 100%, 100%, 0.9) !important; */
+  /* background: hsla(210, 100%, 50%, 0.5) !important; */
+  outline: solid 2px rgba(0, 0, 0, 0.5) !important;
+
+  box-shadow: none !important;
+  filter: none !important;
 }

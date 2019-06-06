@@ -1,0 +1,17 @@
+.App {
+  overflow: hidden;
+}
+
+header {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  font-size: 4rem;
+}
+header h2 {
+  font-size: 1rem;
+}

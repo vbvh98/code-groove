@@ -1,0 +1,12 @@
+.tag-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-gap: 20px;
+  padding: 0.5em 1em;
+}
+
+.tag-list__item {
+  text-align: center;
+  padding: 0.2em 0;
+}

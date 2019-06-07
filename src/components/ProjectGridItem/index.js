@@ -1,10 +1,17 @@
 import React from 'react'
+import './index.css'
 
-const ProjectGridItem = props => {
+const ProjectGridItem = ({ day, title, desc, tags }) => {
   return (
-    <div>
-      {props.title}
-      <p>{props.desc}</p>
+    <div className="card">
+      <h2>#{day}</h2>
+      <h3>{title}</h3>
+      <p>{desc}</p>
+      <ul className="tags">
+        {tags.map(e => (
+          <li className="tags__item">{e}</li>
+        ))}
+      </ul>
     </div>
   )
 }

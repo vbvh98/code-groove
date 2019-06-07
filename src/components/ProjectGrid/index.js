@@ -1,26 +1,17 @@
 import React from 'react'
 import ProjectGridItem from '../ProjectGridItem'
-
-const projects = [
-  {
-    title: 'Asd',
-    desc:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, temporibus!',
-  },
-  {
-    title: 'ren',
-    desc:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, temporibus!',
-  },
-]
+import './index.css'
+import projects from '../../assets/projects'
 
 const ProjectGrid = () => {
   return (
-    <section>
-      {projects.map(project => (
-        <ProjectGridItem {...project} />
-      ))}
-    </section>
+    <div>
+      <section className="container">
+        {projects.reverse().map(project => (
+          <ProjectGridItem {...project} />
+        ))}
+      </section>
+    </div>
   )
 }
 
